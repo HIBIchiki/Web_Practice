@@ -1,0 +1,172 @@
+/* ========================================
+   Buttons
+======================================== */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform var(--transition), background-color var(--transition),
+    color var(--transition), box-shadow var(--transition);
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.button--primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.button--secondary {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.button--secondary:hover {
+  box-shadow: var(--shadow-sm);
+}
+
+/* ========================================
+   Cards
+======================================== */
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid rgba(229, 231, 235, 0.9);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.card--feature,
+.card--pricing,
+.card--stat {
+  padding: 28px;
+}
+
+.card__title {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.card__text {
+  color: var(--color-subtext);
+}
+
+.card__price {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.card__price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-subtext);
+}
+
+.card__list {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: var(--color-subtext);
+}
+
+.card--highlight {
+  border-color: rgba(108, 99, 255, 0.35);
+  box-shadow: 0 16px 35px rgba(108, 99, 255, 0.12);
+}
+
+/* ========================================
+   Steps
+======================================== */
+
+.step-card {
+  padding: 28px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.step-card__number {
+  margin-bottom: 12px;
+  color: var(--color-primary);
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.step-card__title {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.step-card__text {
+  color: var(--color-subtext);
+}
+
+/* ========================================
+   FAQ
+======================================== */
+
+.faq-item {
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.faq-item__question {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+.faq-item__answer {
+  color: var(--color-subtext);
+}
+
+/* ========================================
+   Stat cards / badges
+======================================== */
+
+.stat-card__label {
+  color: var(--color-subtext);
+  font-size: 0.92rem;
+  margin-bottom: 10px;
+}
+
+.stat-card__value {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.stat-card__meta {
+  color: var(--color-subtext);
+  font-size: 0.92rem;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
