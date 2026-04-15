@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | StudyFlow</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard-layout">
+      <aside class="sidebar">
+        <div class="sidebar__logo">
+          <a href="index.html">StudyFlow</a>
+        </div>
+
+        <nav class="sidebar__nav">
+          <ul class="sidebar__menu">
+            <li><a href="#" class="is-active">Overview</a></li>
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="topbar">
+          <div>
+            <p class="topbar__label">Dashboard</p>
+            <h1 class="topbar__title">Welcome back, Kaito</h1>
+          </div>
+
+          <div class="topbar__actions">
+            <div class="search-box">Search</div>
+            <div class="user-badge">KW</div>
+          </div>
+        </header>
+
+        <section class="stats-grid">
+          <article class="card card--stat">
+            <p class="stat-card__label">Today’s Focus</p>
+            <h2 class="stat-card__value">3.5h</h2>
+            <p class="stat-card__meta">+0.8h from yesterday</p>
+          </article>
+
+          <article class="card card--stat">
+            <p class="stat-card__label">Tasks Completed</p>
+            <h2 class="stat-card__value">7</h2>
+            <p class="stat-card__meta">2 tasks remaining</p>
+          </article>
+
+          <article class="card card--stat">
+            <p class="stat-card__label">Weekly Streak</p>
+            <h2 class="stat-card__value">12 days</h2>
+            <p class="stat-card__meta">Keep the pace</p>
+          </article>
+
+          <article class="card card--stat">
+            <p class="stat-card__label">Monthly Progress</p>
+            <h2 class="stat-card__value">68%</h2>
+            <p class="stat-card__meta">On track this month</p>
+          </article>
+        </section>
+
+        <section class="dashboard-content">
+          <div class="dashboard-content__main">
+            <section class="card dashboard-panel">
+              <div class="panel-heading">
+                <h2 class="panel-title">Learning Progress</h2>
+                <a href="#" class="panel-link">View All</a>
+              </div>
+
+              <div class="progress-list">
+                <div class="progress-item">
+                  <div class="progress-item__info">
+                    <p class="progress-item__title">Web Development</p>
+                    <p class="progress-item__meta">HTML / CSS</p>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar__fill progress-bar__fill--80"></div>
+                  </div>
+                </div>
+
+                <div class="progress-item">
+                  <div class="progress-item__info">
+                    <p class="progress-item__title">Algorithms</p>
+                    <p class="progress-item__meta">Graphs / DP</p>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar__fill progress-bar__fill--60"></div>
+                  </div>
+                </div>
+
+                <div class="progress-item">
+                  <div class="progress-item__info">
+                    <p class="progress-item__title">English Reading</p>
+                    <p class="progress-item__meta">Daily Practice</p>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar__fill progress-bar__fill--45"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="card dashboard-panel">
+              <div class="panel-heading">
+                <h2 class="panel-title">Today’s Tasks</h2>
+                <a href="#" class="panel-link">Manage</a>
+              </div>
+
+              <ul class="task-list">
+                <li class="task-item">
+                  <div>
+                    <p class="task-item__title">HTML構造の見直し</p>
+                    <p class="task-item__meta">Priority: High</p>
+                  </div>
+                  <span class="status-badge">In Progress</span>
+                </li>
+
+                <li class="task-item">
+                  <div>
+                    <p class="task-item__title">CSSカードUIの作成</p>
+                    <p class="task-item__meta">Priority: Medium</p>
+                  </div>
+                  <span class="status-badge">Pending</span>
+                </li>
+
+                <li class="task-item">
+                  <div>
+                    <p class="task-item__title">レスポンシブ対応</p>
+                    <p class="task-item__meta">Priority: High</p>
+                  </div>
+                  <span class="status-badge">Pending</span>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <aside class="dashboard-content__side">
+            <section class="card dashboard-panel">
+              <div class="panel-heading">
+                <h2 class="panel-title">Calendar</h2>
+              </div>
+
+              <div class="calendar-grid">
+                <span>1</span><span>2</span><span>3</span><span>4</span>
+                <span>5</span><span>6</span><span>7</span><span>8</span>
+                <span>9</span><span>10</span><span>11</span><span>12</span>
+                <span>13</span><span>14</span><span class="is-today">15</span><span>16</span>
+                <span>17</span><span>18</span><span>19</span><span>20</span>
+                <span>21</span><span>22</span><span>23</span><span>24</span>
+                <span>25</span><span>26</span><span>27</span><span>28</span>
+              </div>
+            </section>
+
+            <section class="card dashboard-panel">
+              <div class="panel-heading">
+                <h2 class="panel-title">Recent Activity</h2>
+              </div>
+
+              <ul class="activity-list">
+                <li class="activity-item">
+                  <p class="activity-item__text">HTMLのheroセクションを完成</p>
+                  <span class="activity-item__time">10 min ago</span>
+                </li>
+                <li class="activity-item">
+                  <p class="activity-item__text">CSSでカードレイアウトを調整</p>
+                  <span class="activity-item__time">1 hour ago</span>
+                </li>
+                <li class="activity-item">
+                  <p class="activity-item__text">READMEを更新</p>
+                  <span class="activity-item__time">Yesterday</span>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
